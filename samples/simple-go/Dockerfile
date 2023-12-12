@@ -1,4 +1,4 @@
-# Use a base image with Go and Node.js installed
+# Use a base image 
 FROM ubuntu:20.04 as builder
 
 # Set up the working directory
@@ -13,10 +13,10 @@ RUN apt-get update && \
 
 ARG GO_VERSION=1.21.5
 
-# Download and Install go
+# Download tar.gz file
 RUN wget https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz
 
-# Extract tar.gz
+# First extract tar.gz and then remove it
 RUN tar -C /usr/local/ -xzf go${GO_VERSION}.linux-amd64.tar.gz && \
     rm go${GO_VERSION}.linux-amd64.tar.gz
 
