@@ -51,4 +51,4 @@ spin build # Build WebAssembly file
 spin up # Run serverless HTTP service powered by WebAssembly
 ```
 
-**NOTE:** Spin was installed and utilized with Ubuntu WSL
+**NOTE:** Spin was installed in and utilized with Ubuntu WSL
