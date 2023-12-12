@@ -35,3 +35,13 @@ cd samples/simple-go
 docker build -t simple-go-wasm-app:stable .
 docker run --rm simple-go-wasm-app:stable bash -c "wasmtime run output.wasm"
 ```
+
+### simple-rust-service
+
+Run following commands:
+
+```sh
+cd samples/simple-rust-service
+docker build -t simple-rust-service-wasm-app:stable .
+docker run --rm simple-rust-service-wasm-app:stable bash -c "wasmtime run simple-rust-service.wasm"
+```
