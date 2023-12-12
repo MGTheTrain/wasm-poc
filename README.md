@@ -27,3 +27,11 @@ docker run simple-go-wasm-app:stable
 ```
 
 ### simple-rust sample
+
+Run following commands:
+
+```sh
+cd samples/simple-rust
+docker build -t simple-rust-wasm-app:stable .
+docker run simple-rust-wasm-app:stable
+```

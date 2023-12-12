@@ -5,7 +5,7 @@ FROM golang:latest as builder
 WORKDIR /app
 
 # Copy your Go file into the container
-COPY main.go .
+COPY . .
 
 # Compile the Go file to WebAssembly
 RUN GOARCH=wasm GOOS=js go build -o output.wasm main.go
