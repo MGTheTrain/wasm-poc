@@ -33,5 +33,5 @@ Run following commands:
 ```sh
 cd samples/simple-go
 docker build -t simple-go-wasm-app:stable .
-docker run --rm simple-go-wasm-app:stable
+docker run --rm simple-go-wasm-app:stable bash -c "wasmtime run output.wasm"
 ```
