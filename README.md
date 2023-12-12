@@ -12,7 +12,7 @@ A collection showcasing how to generate WASM from various programming languages 
 
 ## References
 
-TBD
+- [Compile Rust & Go to a Wasm+Wasi module and run in a Wasm runtime](https://atamel.dev/posts/2023/06-26_compile_rust_go_wasm_wasi/)
 
 ## How to use
 
