@@ -39,3 +39,16 @@ cd samples/simple-go
 docker build -t simple-go-wasm-app:stable .
 docker run --rm simple-go-wasm-app:stable bash -c "wasmtime run output.wasm"
 ```
+
+### simple-rust-service
+
+Run following commands to spin up a serverless application powered by WebAssembly:
+
+```sh
+cd samples/simple-rust-service
+# Update in the `spin.toml` the cargo command
+spin build # Build WebAssembly file
+spin up # Run serverless HTTP service powered by WebAssembly
+```
+
+**NOTE:** Spin was installed and utilized with Ubuntu WSL

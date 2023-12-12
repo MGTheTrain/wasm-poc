@@ -1,0 +1,18 @@
+spin_manifest_version = 2
+
+[application]
+name = "simple-rust-service"
+version = "0.1.0"
+authors = ["marvin"]
+description = ""
+
+[[trigger.http]]
+route = "/..."
+component = "simple-rust-service"
+
+[component.simple-rust-service]
+source = "target/wasm32-wasi/release/simple_rust_service.wasm"
+allowed_outbound_hosts = []
+[component.simple-rust-service.build]
+command = "cargo.exe build --target wasm32-wasi --release"
+watch = ["src/**/*.rs", "Cargo.toml"]
