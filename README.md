@@ -21,6 +21,7 @@ TBD
 Run following commands:
 
 ```sh
+cd samples/simple-go
 docker build -t simple-go-wasm-app:stable .
 docker run simple-go-wasm-app:stable
 ```
