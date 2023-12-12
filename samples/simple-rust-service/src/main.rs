@@ -3,7 +3,7 @@ use std::net::SocketAddr;
 
 #[tokio::main]
 async fn main() {
-    let app = Router::new().route("/", get(handler));
+    let app = Router::new().route("/", get(hello_handler));
     let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
 
     axum::Server::bind(&addr)
@@ -12,6 +12,6 @@ async fn main() {
         .unwrap();
 }
 
-async fn handler() -> &'static str {
+async fn hello_handler() -> &'static str {
     "Hello WASM from Rust"
 }
