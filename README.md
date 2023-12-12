@@ -16,4 +16,13 @@ TBD
 
 ## How to use
 
-TBD
+### simple-go sample
+
+Run following commands:
+
+```sh
+docker build -t simple-go-wasm-app:stable .
+docker run simple-go-wasm-app:stable
+```
+
+### simple-rust sample
