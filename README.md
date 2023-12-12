@@ -10,13 +10,13 @@
 
 A collection showcasing how to generate WASM from various programming languages and execute the WASM code using a WASM runtime. 
 
-**NOTE:** HTTP services might be hard to compile since socket support might not yet be available in Wasi. Search in [following link for `socket support`](https://atamel.dev/posts/2023/06-26_compile_rust_go_wasm_wasi/)
-
+**NOTE:** HTTP services might be hard to compile since socket support might not yet be available in Wasi. Search in [following link for `socket support`](https://atamel.dev/posts/2023/06-26_compile_rust_go_wasm_wasi/). Optionally check further CNCF projects:
+- [runwasi - Facilitates running Wasm / WASI workloads managed by containerd](https://github.com/containerd/runwasi)
+- [spin - Spin is the open source developer tool for building and running serverless applications powered by WebAssembly.](https://github.com/fermyon/spin)
 
 ## References
 
 - [Compile Rust & Go to a Wasm+Wasi module and run in a Wasm runtime](https://atamel.dev/posts/2023/06-26_compile_rust_go_wasm_wasi/)
-- [runwasi - Facilitates running Wasm / WASI workloads managed by containerd](https://github.com/containerd/runwasi)
 
 ## How to use
 
