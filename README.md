@@ -28,12 +28,12 @@ Run following commands:
 cd samples/simple-rust
 
 # when wanting to utilize the wasmer runtime 
-docker build -t simple-rust-wasm-app:stable -f Dockerfile.wasmer . 
-docker run --rm simple-rust-wasm-app:stable bash -c "wasmer run simple-rust.wasm"
+docker build -t simple-rust-wasm-app-with-wasmer:stable -f Dockerfile.wasmer . 
+docker run --rm simple-rust-wasm-app-with-wasmer:stable bash -c "wasmer run simple-rust.wasm"
 
 # when wanting to utilize the wasmtime runtime 
-docker build -t simple-rust-wasm-app:stable -f Dockerfile.wasmtime . 
-docker run --rm simple-rust-wasm-app:stable bash -c "wasmtime run simple-rust.wasm"
+docker build -t simple-rust-wasm-app-with-wasmtime:stable -f Dockerfile.wasmtime . 
+docker run --rm simple-rust-wasm-app-with-wasmtime:stable bash -c "wasmtime run simple-rust.wasm"
 ```
 
 ### simple-go sample
@@ -42,8 +42,8 @@ Run following commands:
 
 ```sh
 cd samples/simple-go
-docker build -t simple-go-wasm-app:stable .
-docker run --rm simple-go-wasm-app:stable bash -c "wasmtime run output.wasm"
+docker build -t simple-go-wasm-app-with-wasmtime:stable .
+docker run --rm simple-go-wasm-app-with-wasmtime:stable bash -c "wasmtime run output.wasm"
 ```
 
 ### simple-rust-service
