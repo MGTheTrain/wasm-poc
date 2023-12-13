@@ -27,11 +27,11 @@ Run following commands:
 ```sh
 cd samples/simple-rust
 
-# when wanting to utilize the wasmer runtime 
+# when wanting to utilize the wasmer as WebAssembly runtime 
 docker build -t simple-rust-wasm-app-with-wasmer:stable -f Dockerfile.wasmer . 
 docker run --rm simple-rust-wasm-app-with-wasmer:stable bash -c "wasmer run simple-rust.wasm"
 
-# when wanting to utilize the wasmtime runtime 
+# when wanting to utilize the wasmtime as WebAssembly runtime 
 docker build -t simple-rust-wasm-app-with-wasmtime:stable -f Dockerfile.wasmtime . 
 docker run --rm simple-rust-wasm-app-with-wasmtime:stable bash -c "wasmtime run simple-rust.wasm"
 ```
