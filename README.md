@@ -36,7 +36,8 @@ Run following commands:
 
 ```sh
 cd samples/simple-go
-docker build -t simple-go-wasm-app:stable .
+docker build -t simple-go-wasm-app:stable -f Dockerfile.wasmer . # when wanting to utilize the wasmer runtime 
+# docker build -t simple-go-wasm-app:stable -f Dockerfile.wasmtime . # when wanting to utilize the wasmtime runtime 
 docker run --rm simple-go-wasm-app:stable bash -c "wasmtime run output.wasm"
 ```
 
