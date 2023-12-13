@@ -17,6 +17,8 @@ A collection showcasing how to generate WASM from various programming languages 
 ## References
 
 - [Compile Rust & Go to a Wasm+Wasi module and run in a Wasm runtime](https://atamel.dev/posts/2023/06-26_compile_rust_go_wasm_wasi/)
+- [wasmer Github repo](https://github.com/wasmerio/wasmer)
+- [wasmtime Github repo](https://github.com/bytecodealliance/wasmtime)
 
 ## How to use
 
