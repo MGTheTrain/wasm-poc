@@ -1,4 +1,4 @@
-# wasm-sample
+# wasm-poc
 
 ## Table of Contents
 
